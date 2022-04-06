@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Аудио плеер</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+    <div class="container">
+        <div class="player">
+            <header class="header">
+                <div class="header__row">
+                    <img class="header-arrow" src="img/Chevron.png">
+                    <div class="title">PLAYING FROM PARTY</div>
+                    <img class="header-menu" src="img/menu.png" alt="">
+                </div>
+                <img class="header-party" src="img/party.png" alt="">
+            </header>
+
+            <div class="preview">
+                <img class="preview-img" src="img/preview/title1.jpg" alt="">
+            </div>
+
+            <div class="info-audio">
+                <div class="info-header">
+                    <div class="name-audio">Ihunanya (The Love Song)</div>
+                    <div class="likes-audio">
+                        <button class="button">
+                            <div class="hand">
+                                <div class="thumb"></div>
+                            </div>
+                            <span>Like<span>d</span></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="info-musician">Oxxxymiron</div>
+            </div>
+
+            <audio class="audio" src="audio/Эминем.mp3"></audio>
+
+            <div class="progress__container">
+                <div class="progress"></div>
+            </div>
+
+            <div class="time">
+                <div class="currentTime">1</div>
+            </div>
+
+            <div class="controls-btn">
+                <div class="btn-shuffle"><img src="img/Shuffle.png" alt=""></div>
+                <div class="btn-prev"><img src="img/prev.png" alt="prev"></div>
+                <div class="btn-play"><img class="img__src" src="img/play.png" alt="play"></div>
+                <div class="btn-next"><img src="img/next.png" alt="next"></div>
+                <div class="btn-repeat"><img src="img/repeat.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+<!--БИБЛИОТЕКА GSAP-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+</body>
+</html>
