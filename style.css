@@ -105,6 +105,9 @@ body{
     align-items: center;
     margin-top: 24px;
 }
+.btn-repeat{
+    cursor: pointer;
+}
 
 .btn-prev{
     cursor: pointer;
@@ -139,6 +142,10 @@ body{
     font-size: 14px;
     line-height: 22px;
     color: #1A1C21;
+}
+
+.btn-repeat img{
+    width: 40px;
 }
 /*СТИЛИЗАЦИЯ КНОПКИ ЛАЙКА*/
 

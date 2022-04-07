@@ -16,9 +16,11 @@ let progress = document.querySelector('.progress');
 //pause
 let imgScr = document.querySelector('.img__src');
 
+let repeatImg = document.querySelector('.repeat__Img');
+
 
 let NextTime = document.querySelector('.currentTime');
-let endTime = document.querySelector('.endTime');
+let endTime = document.querySelector('.endtime');
 
 
 //информация о песнях
@@ -65,6 +67,31 @@ playBtn.addEventListener('click', function () {
         playSong()
     }
 });
+
+//кнопка повторении песни
+function yesrepeat(){
+    player.classList.add('repeat')
+    repeatImg.classList.add('repeat-img-active');
+    repeatImg.src = `img/repeat1.png`
+    let song = audio;
+    song.loop = true;
+}
+function norepeat(){
+    player.classList.remove('repeat')
+    repeatImg.classList.remove('repeat-img-active');
+    repeatImg.src = `img/repeat0.jpg`
+    let song = audio;
+    song.loop = false;
+}
+replayBtn.addEventListener('click', function () {
+    const isReplay = player.classList.contains('repeat');
+    if (isReplay){
+        norepeat()
+    }else {
+        yesrepeat()
+    }
+})
+
 
 //NEXT PLAY
 function nextSong() {
@@ -120,10 +147,12 @@ function setProgress(event){
     let duration = audio.duration
 
     audio.currentTime = (clickX / width) * duration;
+
 }
 progressContainer.addEventListener('click', setProgress);
 //следующая песня
 audio.addEventListener('ended',nextSong);
+
 
 
 //АНИМАЦИЯ КНОПКИ ЛАЙКА
@@ -153,7 +182,6 @@ document.querySelectorAll('.button').forEach(button => {
             });
         }
     })
-
 });
 
 
