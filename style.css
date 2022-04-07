@@ -4,9 +4,10 @@
     box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
 }
-body{
-}
 
+.github__img{
+    width: 45px;
+}
 .wrapper{
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     /*box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;*/
@@ -106,6 +107,9 @@ body{
     margin-top: 24px;
 }
 .btn-repeat{
+    cursor: pointer;
+}
+.btn-shuffle{
     cursor: pointer;
 }
 

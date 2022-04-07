@@ -3,7 +3,7 @@ let player = document.querySelector('.player');
 let playBtn = document.querySelector('.btn-play');
 let nextBtn = document.querySelector('.btn-next');
 let prevBtn = document.querySelector('.btn-prev');
-let documentShuffle = document.querySelector('.btn-shuffle');
+let shuffleBtn = document.querySelector('.btn-shuffle');
 let replayBtn = document.querySelector('.btn-repeat')
 //info music
 let nameAudio = document.querySelector('.name-audio');
@@ -152,7 +152,6 @@ function setProgress(event){
 progressContainer.addEventListener('click', setProgress);
 //следующая песня
 audio.addEventListener('ended',nextSong);
-
 
 
 //АНИМАЦИЯ КНОПКИ ЛАЙКА
